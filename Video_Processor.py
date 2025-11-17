@@ -9,7 +9,7 @@ class VideoProcessor:
         self.frame_interval = frame_interval
         self.logger = logging.getLogger(__name__)
     
-    def extract_frames(self, video_path: str, max_frames: int = 30) -> List[np.ndarray]:
+    def extract_frames(self, video_path: str, max_frames: int = 50) -> List[np.ndarray]:
         """Extract frames from video at regular intervals"""
         frames = []
         try:
